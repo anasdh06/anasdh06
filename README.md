@@ -303,9 +303,6 @@ Looking to collaborate on security assessments, network engineering projects, or
 <div align="center">
 
 <p align="center">
-  <a href="mailto:anas-douah@hotmail.com">
-    <img src="https://img.shields.io/badge/EMAIL-anas--douah%40hotmail.com-080c10?style=for-the-badge&logo=microsoftoutlook&logoColor=00f5ff" alt="Email Uplink" />
-  </a>
   &nbsp;&nbsp;
   <a href="https://github.com/anasdh06">
     <img src="https://img.shields.io/badge/GITHUB-anasdh06-080c10?style=for-the-badge&logo=github&logoColor=00f5ff" alt="GitHub Profile" />
