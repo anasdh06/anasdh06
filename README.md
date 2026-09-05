@@ -308,9 +308,6 @@ Looking to collaborate on security assessments, network engineering projects, or
     <img src="https://img.shields.io/badge/GITHUB-anasdh06-080c10?style=for-the-badge&logo=github&logoColor=00f5ff" alt="GitHub Profile" />
   </a>
   &nbsp;&nbsp;
-  <a href="https://linkedin.com/in/YOUR_LINKEDIN">
-    <img src="https://img.shields.io/badge/LINKEDIN-CONNECT-080c10?style=for-the-badge&logo=linkedin&logoColor=00f5ff" alt="LinkedIn Uplink" />
-  </a>
   &nbsp;&nbsp;
   <a href="https://discord.com">
     <img src="https://img.shields.io/badge/DISCORD-COMMUNITY-080c10?style=for-the-badge&logo=discord&logoColor=00f5ff" alt="Discord Uplink" />
