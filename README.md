@@ -9,7 +9,7 @@
 
 <!-- SYSTEM STATUS STRIP -->
 <p align="center">
-  <img src="https://img.shields.io/badge/OPERATOR-ANAAS-080c10?style=flat-square&logo=visualstudiocode&logoColor=00f5ff" alt="Operator" />
+  <img src="https://img.shields.io/badge/OPERATOR-ANAS-080c10?style=flat-square&logo=visualstudiocode&logoColor=00f5ff" alt="Operator" />
   <img src="https://img.shields.io/badge/CLEARANCE-CYBERSECURITY%20ENGINEER-080c10?style=flat-square&logo=target&logoColor=00f5ff" alt="Clearance" />
   <img src="https://img.shields.io/badge/INFRASTRUCTURE-NETWORKING%20%26%20SYSTEMS-080c10?style=flat-square&logo=wireshark&logoColor=38bdf8" alt="Infrastructure" />
   <img src="https://img.shields.io/badge/CORE%20FOCUS-OFFENSIVE%20%26%20DEFENSIVE-080c10?style=flat-square&logo=kalilinux&logoColor=10b981" alt="Focus" />
