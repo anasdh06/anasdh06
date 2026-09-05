@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" width="100%" height="auto">
+  <defs>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0e1724"/>
+      <stop offset="100%" stop-color="#080c14"/>
+    </linearGradient>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Card 1: Offensive Security -->
+  <g transform="translate(10, 10)">
+    <rect width="280" height="210" rx="6" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.5"/>
+    <rect width="280" height="210" rx="6" fill="none" stroke="#00f5ff" stroke-width="1" stroke-opacity="0.2"/>
+    <rect x="15" y="15" width="40" height="22" rx="3" fill="#00f5ff" fill-opacity="0.1"/>
+    <text x="35" y="30" text-anchor="middle" fill="#00f5ff" font-family="monospace" font-size="11" font-weight="bold">01</text>
+    <text x="65" y="31" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="bold">OFFENSIVE SECURITY</text>
+    <line x1="15" y1="48" x2="265" y2="48" stroke="#1e293b" stroke-width="1"/>
+    <text x="15" y="72" fill="#94a3b8" font-family="monospace" font-size="11">• Penetration Testing</text>
+    <text x="15" y="92" fill="#94a3b8" font-family="monospace" font-size="11">• Vulnerability Assessment</text>
+    <text x="15" y="112" fill="#94a3b8" font-family="monospace" font-size="11">• Social Engineering (AD-PHISH)</text>
+    <text x="15" y="132" fill="#94a3b8" font-family="monospace" font-size="11">• Metasploit, Nmap, Kali Linux</text>
+    <text x="15" y="152" fill="#94a3b8" font-family="monospace" font-size="11">• Exploit Analysis &amp; PoC</text>
+    <rect x="15" y="172" width="250" height="24" rx="3" fill="#030712" stroke="#00f5ff" stroke-width="0.75" stroke-opacity="0.4"/>
+    <text x="140" y="188" text-anchor="middle" fill="#00f5ff" font-family="monospace" font-size="10" font-weight="600">CAPABILITY: OFFENSIVE AUDITING</text>
+  </g>
+
+  <!-- Card 2: Networking & Infrastructure -->
+  <g transform="translate(310, 10)">
+    <rect width="280" height="210" rx="6" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.5"/>
+    <rect width="280" height="210" rx="6" fill="none" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.2"/>
+    <rect x="15" y="15" width="40" height="22" rx="3" fill="#38bdf8" fill-opacity="0.1"/>
+    <text x="35" y="30" text-anchor="middle" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="bold">02</text>
+    <text x="65" y="31" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="bold">NETWORKING &amp; INFRA</text>
+    <line x1="15" y1="48" x2="265" y2="48" stroke="#1e293b" stroke-width="1"/>
+    <text x="15" y="72" fill="#94a3b8" font-family="monospace" font-size="11">• Cisco Packet Tracer &amp; GNS3</text>
+    <text x="15" y="92" fill="#94a3b8" font-family="monospace" font-size="11">• TCP/IP, DNS, DHCP, NAT</text>
+    <text x="15" y="112" fill="#94a3b8" font-family="monospace" font-size="11">• VLAN, Subnetting &amp; Routing</text>
+    <text x="15" y="132" fill="#94a3b8" font-family="monospace" font-size="11">• Firewalls &amp; VPN Gateways</text>
+    <text x="15" y="152" fill="#94a3b8" font-family="monospace" font-size="11">• Active Directory &amp; Windows Server</text>
+    <rect x="15" y="172" width="250" height="24" rx="3" fill="#030712" stroke="#38bdf8" stroke-width="0.75" stroke-opacity="0.4"/>
+    <text x="140" y="188" text-anchor="middle" fill="#38bdf8" font-family="monospace" font-size="10" font-weight="600">CAPABILITY: TOPOLOGY &amp; TRAFFIC</text>
+  </g>
+
+  <!-- Card 3: Systems & Tool Engineering -->
+  <g transform="translate(610, 10)">
+    <rect width="280" height="210" rx="6" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.5"/>
+    <rect width="280" height="210" rx="6" fill="none" stroke="#10b981" stroke-width="1" stroke-opacity="0.2"/>
+    <rect x="15" y="15" width="40" height="22" rx="3" fill="#10b981" fill-opacity="0.1"/>
+    <text x="35" y="30" text-anchor="middle" fill="#10b981" font-family="monospace" font-size="11" font-weight="bold">03</text>
+    <text x="65" y="31" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="bold">SYSTEMS &amp; DEV</text>
+    <line x1="15" y1="48" x2="265" y2="48" stroke="#1e293b" stroke-width="1"/>
+    <text x="15" y="72" fill="#94a3b8" font-family="monospace" font-size="11">• Go Concurrency (Eagles-X)</text>
+    <text x="15" y="92" fill="#94a3b8" font-family="monospace" font-size="11">• Python Security Tooling</text>
+    <text x="15" y="112" fill="#94a3b8" font-family="monospace" font-size="11">• Shell Scripting &amp; Automation</text>
+    <text x="15" y="132" fill="#94a3b8" font-family="monospace" font-size="11">• Docker Containerization</text>
+    <text x="15" y="152" fill="#94a3b8" font-family="monospace" font-size="11">• REST APIs &amp; Bot Frameworks</text>
+    <rect x="15" y="172" width="250" height="24" rx="3" fill="#030712" stroke="#10b981" stroke-width="0.75" stroke-opacity="0.4"/>
+    <text x="140" y="188" text-anchor="middle" fill="#10b981" font-family="monospace" font-size="10" font-weight="600">CAPABILITY: RESILIENT CODE</text>
+  </g>
+
+  <!-- Card 4: UI/UX & Web Interface -->
+  <g transform="translate(910, 10)">
+    <rect width="280" height="210" rx="6" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.5"/>
+    <rect width="280" height="210" rx="6" fill="none" stroke="#818cf8" stroke-width="1" stroke-opacity="0.2"/>
+    <rect x="15" y="15" width="40" height="22" rx="3" fill="#818cf8" fill-opacity="0.1"/>
+    <text x="35" y="30" text-anchor="middle" fill="#818cf8" font-family="monospace" font-size="11" font-weight="bold">04</text>
+    <text x="65" y="31" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="bold">UI/UX &amp; WEB DEV</text>
+    <line x1="15" y1="48" x2="265" y2="48" stroke="#1e293b" stroke-width="1"/>
+    <text x="15" y="72" fill="#94a3b8" font-family="monospace" font-size="11">• Modern Responsive Interfaces</text>
+    <text x="15" y="92" fill="#94a3b8" font-family="monospace" font-size="11">• Design Systems &amp; Visual Flow</text>
+    <text x="15" y="112" fill="#94a3b8" font-family="monospace" font-size="11">• Documentation Hubs (fearless/ruthless)</text>
+    <text x="15" y="132" fill="#94a3b8" font-family="monospace" font-size="11">• Tailwind CSS &amp; Clean Frontend</text>
+    <text x="15" y="152" fill="#94a3b8" font-family="monospace" font-size="11">• Accessibility &amp; Usability</text>
+    <rect x="15" y="172" width="250" height="24" rx="3" fill="#030712" stroke="#818cf8" stroke-width="0.75" stroke-opacity="0.4"/>
+    <text x="140" y="188" text-anchor="middle" fill="#818cf8" font-family="monospace" font-size="10" font-weight="600">CAPABILITY: HUMAN-ENGINE INTERACTION</text>
+  </g>
+</svg>

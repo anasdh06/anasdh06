@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 340" width="100%" height="auto">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040608"/>
+      <stop offset="50%" stop-color="#070c12"/>
+      <stop offset="100%" stop-color="#020305"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5ff"/>
+      <stop offset="50%" stop-color="#00b4d8"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#00f5ff"/>
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5ff" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#00f5ff" stop-opacity="0.8"/>
+      <stop offset="75%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00f5ff" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00f5ff" stroke-width="0.75" stroke-opacity="0.06"/>
+    </pattern>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#00f5ff" fill-opacity="0.08"/>
+    </pattern>
+    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1280" height="340" fill="url(#bgGrad)"/>
+  <rect width="1280" height="340" fill="url(#grid)"/>
+  <rect width="1280" height="340" fill="url(#dots)"/>
+
+  <!-- Tactical Border Frame -->
+  <rect x="20" y="20" width="1240" height="300" rx="8" fill="none" stroke="#162638" stroke-width="1.5"/>
+  <rect x="20" y="20" width="1240" height="300" rx="8" fill="none" stroke="#00f5ff" stroke-width="1" stroke-opacity="0.25"/>
+
+  <!-- Corner Brackets (Command Center HUD) -->
+  <path d="M 16 45 L 16 16 L 45 16" fill="none" stroke="#00f5ff" stroke-width="2.5" filter="url(#softGlow)"/>
+  <path d="M 1264 45 L 1264 16 L 1235 16" fill="none" stroke="#00f5ff" stroke-width="2.5" filter="url(#softGlow)"/>
+  <path d="M 16 295 L 16 324 L 45 324" fill="none" stroke="#00f5ff" stroke-width="2.5" filter="url(#softGlow)"/>
+  <path d="M 1264 295 L 1264 324 L 1235 324" fill="none" stroke="#00f5ff" stroke-width="2.5" filter="url(#softGlow)"/>
+
+  <!-- Top Metadata Bar -->
+  <rect x="40" y="38" width="1200" height="26" rx="4" fill="#081018" stroke="#1c2d42" stroke-width="1"/>
+  <circle cx="58" cy="51" r="4.5" fill="#10b981" filter="url(#softGlow)"/>
+  <text x="72" y="55" fill="#8b949e" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="11" letter-spacing="1">SYSTEM NODE // <tspan fill="#10b981" font-weight="bold">ACTIVE</tspan> [ID: ANAS-SEC-01] • SECURITY PROTOCOL: ENFORCED • TLS 1.3 // 256-BIT AES</text>
+  <text x="1225" y="55" text-anchor="end" fill="#00f5ff" font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-size="11" letter-spacing="1.5">ANASDH06 // NODE: VERIFIED</text>
+
+  <!-- Left Tactical Graphic Element: Radar / Target Matrix -->
+  <g transform="translate(100, 185)">
+    <circle cx="0" cy="0" r="65" fill="none" stroke="#00f5ff" stroke-width="1" stroke-opacity="0.2"/>
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#00f5ff" stroke-width="1" stroke-opacity="0.35" stroke-dasharray="4 4"/>
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#00f5ff" stroke-width="1.2" stroke-opacity="0.5"/>
+    <circle cx="0" cy="0" r="5" fill="#00f5ff" filter="url(#softGlow)"/>
+    <line x1="-75" y1="0" x2="75" y2="0" stroke="#00f5ff" stroke-width="1" stroke-opacity="0.25"/>
+    <line x1="0" y1="-75" x2="0" y2="75" stroke="#00f5ff" stroke-width="1" stroke-opacity="0.25"/>
+    <path d="M 0 0 L 45 -45 A 65 65 0 0 1 65 0 Z" fill="#00f5ff" fill-opacity="0.08"/>
+    <text x="0" y="88" text-anchor="middle" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="2">THREAT TELEMETRY</text>
+  </g>
+
+  <!-- Central Identity Area -->
+  <g transform="translate(220, 105)">
+    <!-- Subheader Tag -->
+    <rect x="0" y="0" width="240" height="22" rx="3" fill="#0c1e2e" stroke="#00f5ff" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="12" y="15" fill="#00f5ff" font-family="'JetBrains Mono', 'Segoe UI', monospace" font-size="11" font-weight="bold" letter-spacing="2">CYBER DEFENSE &amp; ENG</text>
+
+    <!-- Main Title -->
+    <text x="0" y="65" fill="url(#cyanGrad)" font-family="'Segoe UI', -apple-system, system-ui, Roboto, sans-serif" font-size="46" font-weight="900" letter-spacing="4" filter="url(#cyanGlow)">CYBERSECURITY SPECIALIST</text>
+
+    <!-- Horizontal Accent Line -->
+    <line x1="0" y1="85" x2="800" y2="85" stroke="url(#accentLine)" stroke-width="2"/>
+
+    <!-- Pillars / Domains Underneath -->
+    <text x="0" y="118" fill="#e2e8f0" font-family="'JetBrains Mono', 'Segoe UI', monospace" font-size="15" font-weight="600" letter-spacing="2.5">
+      <tspan fill="#00f5ff">NETWORKING</tspan> • <tspan fill="#38bdf8">SECURITY ENGINEERING</tspan> • <tspan fill="#94a3b8">DEVELOPMENT</tspan> • <tspan fill="#00f5ff">UI/UX DESIGN</tspan>
+    </text>
+
+    <!-- Tactical Capabilities Summary -->
+    <text x="0" y="145" fill="#8b949e" font-family="'JetBrains Mono', monospace" font-size="12" letter-spacing="1.2">
+      OFFENSIVE ASSESSMENT • NETWORK INFRASTRUCTURE • AUTOMATION • RESILIENT SYSTEMS
+    </text>
+  </g>
+
+  <!-- Right Tactical Graphic Element: Hexagonal Shield & Telemetry -->
+  <g transform="translate(1140, 185)">
+    <polygon points="0,-60 52,-30 52,30 0,60 -52,30 -52,-30" fill="#081018" stroke="#00f5ff" stroke-width="1.5" stroke-opacity="0.5" filter="url(#softGlow)"/>
+    <polygon points="0,-45 39,-22 39,22 0,45 -39,22 -39,-22" fill="#00f5ff" fill-opacity="0.05" stroke="#38bdf8" stroke-width="1" stroke-dasharray="3 3"/>
+    <path d="M -12 -5 L -12 -14 C -12 -21 12 -21 12 -14 L 12 -5 L 15 -5 C 17 -5 18 -3 18 -1 L 18 16 C 18 18 17 20 15 20 L -15 20 C -17 20 -18 18 -18 16 L -18 -1 C -18 -3 -17 -5 -15 -5 Z M -7 -5 L 7 -5 L 7 -14 C 7 -18 -7 -18 -7 -14 Z" fill="#00f5ff" filter="url(#softGlow)"/>
+    <circle cx="0" cy="7" r="2.5" fill="#040608"/>
+    <text x="0" y="88" text-anchor="middle" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="2">DEFENSE MATRIX</text>
+  </g>
+
+  <!-- Bottom Terminal Status Bar -->
+  <rect x="40" y="282" width="1200" height="24" rx="3" fill="#060a0f" stroke="#152232" stroke-width="1"/>
+  <text x="55" y="298" fill="#475569" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1">ANAS@SEC-OPS:~#</text>
+  <text x="175" y="298" fill="#00f5ff" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1">./init_portfolio.sh --mode=production --operator=anasdh06 --status=verified</text>
+  <text x="1225" y="298" text-anchor="end" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1.5">INTEGRITY CHECK: VERIFIED [100%]</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="100%" height="auto">
+  <defs>
+    <linearGradient id="pgrad_OFFENSIVE SEC" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1017"/>
+      <stop offset="100%" stop-color="#040608"/>
+    </linearGradient>
+    <filter id="pglow_OFFENSIVE SEC" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="360" rx="8" fill="url(#pgrad_OFFENSIVE SEC)" stroke="#1e293b" stroke-width="1.5"/>
+  <rect width="800" height="360" rx="8" fill="none" stroke="#00f5ff" stroke-width="1" stroke-opacity="0.3"/>
+  
+  <!-- Window title bar -->
+  <rect x="0" y="0" width="800" height="38" rx="8" fill="#0f172a"/>
+  <circle cx="25" cy="19" r="6" fill="#ef4444"/>
+  <circle cx="45" cy="19" r="6" fill="#eab308"/>
+  <circle cx="65" cy="19" r="6" fill="#10b981"/>
+  <text x="400" y="24" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="12">ARCHIVE // OFFENSIVE SEC -- NODE: PRODUCTION</text>
+  
+  <!-- Content Area -->
+  <rect x="30" y="58" width="140" height="24" rx="4" fill="#00f5ff" fill-opacity="0.1" stroke="#00f5ff" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="100" y="74" text-anchor="middle" fill="#00f5ff" font-family="monospace" font-size="11" font-weight="bold">OFFENSIVE SEC</text>
+  
+  <text x="30" y="112" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="24" font-weight="800">AD-PHISH: Social Engineering Assessment Toolkit</text>
+  <text x="185" y="74" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="13">Automated Phishing & Credential Awareness Framework</text>
+  
+  <line x1="30" y1="124" x2="770" y2="124" stroke="#1e293b" stroke-width="1"/>
+  <text x="30" y="140" fill="#94a3b8" font-family="monospace" font-size="13">• Engineered with 30+ responsive high-fidelity authentication templates</text><text x="30" y="166" fill="#94a3b8" font-family="monospace" font-size="13">• Automates user awareness assessment and credential-harvesting attack simulations</text><text x="30" y="192" fill="#94a3b8" font-family="monospace" font-size="13">• Includes Docker containerization and automated Shell deployment scripts</text><text x="30" y="218" fill="#94a3b8" font-family="monospace" font-size="13">• Integrates defensive awareness telemetry and educational security disclaimers</text><text x="30" y="244" fill="#94a3b8" font-family="monospace" font-size="13">• Designed for security teams to evaluate human perimeter vulnerability</text>
+  
+  <!-- Bottom Status Pill -->
+  <rect x="30" y="305" width="740" height="32" rx="4" fill="#020617" stroke="#00f5ff" stroke-width="1" stroke-opacity="0.2"/>
+  <circle cx="50" cy="321" r="4" fill="#00f5ff" filter="url(#pglow_OFFENSIVE SEC)"/>
+  <text x="65" y="325" fill="#e2e8f0" font-family="monospace" font-size="11">SECURITY IMPLICATION: <tspan fill="#00f5ff">AUTHORIZED SIMULATION &amp; SYSTEM AUDITING ONLY</tspan></text>
+</svg>
